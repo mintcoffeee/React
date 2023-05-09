@@ -8,6 +8,8 @@ const Test03 = () => {
   const onOpen = () => {
     setIsOpen(true);
   };
+
+  // 상태 변수와 함수는 같이 있어야 한다.
   const onClose = () => {
     setIsOpen(false);
   };
@@ -25,5 +27,4 @@ const Test03 = () => {
 
 export default Test03;
 
-// 상태 변수와 함수는 같이 있어야 한다.
 // React 부모에서 다 선언, 자식에게 하달
