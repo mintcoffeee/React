@@ -5,9 +5,13 @@ import "../css/Test08.css";
 
 const Test08Gallery = () => {
   const [data, setData] = useState(dataList);
+  const [one, setOne] = useState(data[0]);
+  const onView = (id) => {
+    setOne(data[id - 1]);
+  };
   return (
-    <div className="wrap">
-      <Test08View data={data} />
+    <div className="wrap2">
+      <Test08View one={one} data={data} onView={onView} />
     </div>
   );
 };
