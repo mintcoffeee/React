@@ -1,8 +1,8 @@
 import React from "react";
-import Test01 from "./component/Test01";
+import Test01 from "./component/Test01_axios";
 import Test02 from "./component/Test02";
-import Test03 from "./component/Test03";
-import Todos from "./component/Todos";
+import Test03 from "./component/Test03_useMemo";
+import Test04 from "./component/Test04";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       {/* <Test01 /> */}
       {/* <Test02 /> */}
       {/* <Test03 /> */}
-      <Todos />
+      <Test04 />
     </div>
   );
 };
