@@ -41,6 +41,7 @@ const Test10 = () => {
   };
   return (
     <div>
+      {!name || !age}
       <form onSubmit={onAdd}>
         이름 :{" "}
         <input
